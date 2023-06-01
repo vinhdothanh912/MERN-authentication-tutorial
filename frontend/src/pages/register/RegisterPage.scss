@@ -1,0 +1,37 @@
+@use 'src/themes/variables' as *;
+
+.RegisterPage {
+  width: 524px;
+  margin: 0 auto;
+  padding-top: 200px;
+
+  &-container {
+    padding: 24px;
+    background-color: $bg-color-default;
+    border-radius: 16px;
+  }
+
+  &-title {
+    color: $color-information !important;
+    text-align: center;
+  }
+
+  &-quote {
+    font-size: $font-size-sub;
+    text-align: center;
+  }
+
+  &-form {
+    margin-top: 24px;
+
+    &__submitButton {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &-footer {
+    margin-top: 16px;
+    text-align: center;
+  }
+}
