@@ -1,0 +1,20 @@
+.AuthLayout {
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+
+  &-contentContainer {
+    padding: 0 50px;
+    margin-top: 16px;
+  }
+
+  &-content {
+    padding: 16px 0;
+    border-radius: 8px;
+  }
+
+  &-footer {
+    text-align: center;
+  }
+}

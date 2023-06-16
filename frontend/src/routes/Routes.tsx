@@ -10,6 +10,7 @@ import { RoutePaths } from './routes-constants';
 import LoginPage from 'src/pages/login/LoginPage';
 import RegisterPage from 'src/pages/register/RegisterPage';
 import ForgotPasswordPage from 'src/pages/forgot-password/ForgotPasswordPage';
+import WorkoutsPage from 'src/pages/workouts/WorkoutsPage';
 
 // auth pages
 import HomePage from 'src/pages/home/HomePage';
@@ -34,6 +35,7 @@ const Routes = () => {
         <Route element={<AuthLayout isAuthenticated={!!accessToken} />}>
           <Route index element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
+          <Route path={RoutePaths.WORKOUTS} element={<WorkoutsPage />} />
         </Route>
       </ReactRoutes>
     </Suspense>

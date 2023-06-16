@@ -6,4 +6,5 @@ export const RoutePaths = {
 
   // auth
   HOME: '/',
+  WORKOUTS: '/workouts',
 };
