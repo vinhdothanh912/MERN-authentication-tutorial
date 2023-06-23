@@ -6,7 +6,7 @@ import { ResponseError } from 'src/variables/interfaces/error-response';
 
 const axiosInstance = axios.create({ baseURL: process.env.REACT_APP_API_URL });
 const requestHandler = (config: AxiosRequestConfig) => {
-  const atk = localStorage.getItem(EAuthToken.ACCESS_TOKEN);
+  const atk = localStorage.getItem(EAuthToken.ACCESS_TOKEN) || '123';
 
   const configHeaders = {
     Authorization: `Bearer ${atk}`,

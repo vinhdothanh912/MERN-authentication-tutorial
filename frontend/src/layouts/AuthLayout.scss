@@ -2,16 +2,21 @@
   &-header {
     display: flex;
     align-items: center;
+    padding-inline: 180px;
+
+    &__appName {
+      color: white;
+    }
+
+    &__menu {
+      margin-left: 16px;
+      width: 60%;
+    }
   }
 
   &-contentContainer {
-    padding: 0 50px;
-    margin-top: 16px;
-  }
-
-  &-content {
-    padding: 16px 0;
-    border-radius: 8px;
+    padding-inline: 180px;
+    margin-top: 40px;
   }
 
   &-footer {

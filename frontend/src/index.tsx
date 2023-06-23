@@ -13,16 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <ConfigProvider
-        theme={{
-          token: {
-            fontFamily: 'Roboto-400',
-            colorPrimary: '#48ABE2',
-            colorText: '#292D32',
-            colorError: '#FF7777',
-          },
-        }}
-      >
+      <ConfigProvider>
         <App />
       </ConfigProvider>
     </BrowserRouter>
