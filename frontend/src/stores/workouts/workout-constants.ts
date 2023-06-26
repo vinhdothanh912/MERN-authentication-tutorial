@@ -1,4 +1,5 @@
 export enum EWorkoutActions {
+  SET_WORKOUTS = 'SET_WORKOUTS',
   GET_WORKOUTS = 'GET_WORKOUTS',
   CREATE_WORKOUT = 'CREATE_WORKOUT',
 }

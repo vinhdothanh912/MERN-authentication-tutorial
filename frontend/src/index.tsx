@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'src/App';
 import store from 'src/stores';
 import 'src/themes/index.scss';
+import { WorkoutsContextProvider } from './context/WorkoutContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -14,7 +15,9 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <ConfigProvider>
-        <App />
+        <WorkoutsContextProvider>
+          <App />
+        </WorkoutsContextProvider>
       </ConfigProvider>
     </BrowserRouter>
   </Provider>,

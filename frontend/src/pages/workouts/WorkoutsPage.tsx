@@ -1,13 +1,14 @@
 import { Col, Row, Skeleton, Space, Typography, notification } from 'antd';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
-import { useAppDispatch, TRootState } from 'src/stores';
+import { TRootState, useAppDispatch } from 'src/stores';
 import { EWorkoutActions, createWorkout, getWorkouts } from 'src/stores/workouts';
 import { IWorkout, IWorkoutBase } from 'src/stores/workouts/workout-constants';
 import { ERROR_MESSAGE } from 'src/variables/constants/message';
+
 import './WorkoutsPage.scss';
 import WorkoutDetails from './components/WorkoutDetails';
-import { useSelector } from 'react-redux';
 import WorkoutForm from './components/WorkoutForm';
 
 const WorkoutsPage = () => {

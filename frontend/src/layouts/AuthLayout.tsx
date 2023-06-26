@@ -1,4 +1,4 @@
-import { Layout, Menu, MenuProps, Space, Typography, theme } from 'antd';
+import { Layout, Menu, MenuProps, Typography } from 'antd';
 import React from 'react';
 import { Navigate, Outlet, useNavigate } from 'react-router-dom';
 
